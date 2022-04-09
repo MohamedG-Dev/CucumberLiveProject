@@ -23,7 +23,7 @@ public class Browser {
 		switch (browser) {
 
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().browserVersion("100.0.4896.75").setup();
 			Base.driver = new ChromeDriver();
 			log.info("Chrome Browser is Started" + Base.driver.hashCode());
 			return Base.driver;
