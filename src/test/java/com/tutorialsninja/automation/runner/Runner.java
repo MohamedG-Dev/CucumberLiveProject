@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = { "classpath:FeatureFiles/Register.feature" }, glue = {
-		"classpath:com.tutorialsninja.automation.stepdef" }, tags =  "@register and @One" )
+		"classpath:com.tutorialsninja.automation.stepdef" }, tags = "@register", publish = true)
 public class Runner {
 
 }
