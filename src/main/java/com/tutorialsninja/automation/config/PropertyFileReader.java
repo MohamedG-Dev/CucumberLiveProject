@@ -31,4 +31,16 @@ public class PropertyFileReader implements ConfigurationReader {
 		return Integer.parseInt(properties.getProperty("PageLoadTimeOut"));
 	}
 
+	public String getUserName() {
+		return properties.getProperty("username");
+	}
+
+	public String getPassword() {
+		return properties.getProperty("password");
+	}
+
+	public String getProduct() {
+		return properties.getProperty("product");
+	}
+
 }

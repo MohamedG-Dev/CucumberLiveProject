@@ -24,7 +24,7 @@ public class LoginPage {
 
 	@FindBy(css = "div[class$='alert-dismissible']")
 	public static WebElement mainWarning;
-	
+
 	@FindBy(linkText = "Forgotten Password")
 	public static WebElement forgottenPassword;
 
@@ -32,5 +32,9 @@ public class LoginPage {
 		Elements.TypeText(emailAddressField, emailAddress);
 		Elements.TypeText(passwordField, password);
 		Elements.click(loginButton);
+	}
+
+	public static void loginToApplication() {
+		loginToApplication(Base.reader.getUserName(),Base.reader.getPassword());
 	}
 }
